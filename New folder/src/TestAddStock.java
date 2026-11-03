@@ -30,7 +30,11 @@ public class TestAddStock {
         int minimum = sc.nextInt();
 
         boolean success = StockDAO.addStock(
-            id, batch, quantity, LocalDate.parse(expiry), minimum
+            id,
+            batch,
+            quantity,
+            LocalDate.parse(expiry),
+            minimum
         );
 
         if (success) {
